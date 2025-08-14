@@ -1,6 +1,28 @@
 # 📦 Modular CMS – Media Module
 This module simulates media management and article rendering.
 
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/jsandovalz/cms-media-manager.git
+cd cms-media-manager
+
+```
+
+### 2. Install dependencies
+```bash
+composer install
+```
+
+### 3. Set up environment
+
+```bash
+cp .env.example .env
+php artisan key:generate
+```
+
 # 📦 Overview
     This CMS module includes:
     - Part 1: Media upload, enrichment via OpenAI, and storage.
@@ -93,6 +115,6 @@ php artisan media:search --type=image
 
 ### Show article
 ```bash
-php artisan article:show {uuid}
+php artisan article:show --meddiaUUID={uuid}
 ```
 
